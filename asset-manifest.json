@@ -1,28 +1,28 @@
 {
   "files": {
-    "main.css": "/RodrigoGallvao.github.io/rodrigogalvao/static/css/main.08a2157f.css",
-    "main.js": "/RodrigoGallvao.github.io/rodrigogalvao/static/js/main.dd3737e1.js",
-    "static/js/453.72d11169.chunk.js": "/RodrigoGallvao.github.io/rodrigogalvao/static/js/453.72d11169.chunk.js",
-    "static/media/LogoGif.gif": "/RodrigoGallvao.github.io/rodrigogalvao/static/media/LogoGif.7319d100851927c1a908.gif",
-    "static/media/LogoBlueprint.png": "/RodrigoGallvao.github.io/rodrigogalvao/static/media/LogoBlueprint.ebf7936d27d493ddc592.png",
-    "static/media/Rect.svg": "/RodrigoGallvao.github.io/rodrigogalvao/static/media/Rect.9c3b32916883a16c4f96ed09251e4c5f.svg",
-    "static/media/Sass.svg": "/RodrigoGallvao.github.io/rodrigogalvao/static/media/Sass.05218fc682a0fa0b3f2e486c6b98be10.svg",
-    "static/media/Postman.svg": "/RodrigoGallvao.github.io/rodrigogalvao/static/media/Postman.c4994071823b3809fb25953ce93f9b6f.svg",
-    "static/media/Logo.svg": "/RodrigoGallvao.github.io/rodrigogalvao/static/media/Logo.7a1fd4b177e9625a6abb9d484a22c903.svg",
-    "static/media/Js.svg": "/RodrigoGallvao.github.io/rodrigogalvao/static/media/Js.f103ab1b8bacd0133652c093ebbdf62f.svg",
-    "static/media/Blender.svg": "/RodrigoGallvao.github.io/rodrigogalvao/static/media/Blender.08e24d5c8bae8b116340fd5d891eaee0.svg",
-    "static/media/Wordpress.svg": "/RodrigoGallvao.github.io/rodrigogalvao/static/media/Wordpress.8ecaccda1d09bc4c34e2f89750a162f3.svg",
-    "static/media/Html5.svg": "/RodrigoGallvao.github.io/rodrigogalvao/static/media/Html5.32a6fd94f5af743b4934d44e0b765afe.svg",
-    "index.html": "/RodrigoGallvao.github.io/rodrigogalvao/index.html",
-    "static/media/Git.svg": "/RodrigoGallvao.github.io/rodrigogalvao/static/media/Git.e08a872dd0a7db9af7ca4a65ef10df01.svg",
-    "static/media/Css.svg": "/RodrigoGallvao.github.io/rodrigogalvao/static/media/Css.727f1b0b3f22625483b8afc9189afebf.svg",
-    "static/media/Adobe.svg": "/RodrigoGallvao.github.io/rodrigogalvao/static/media/Adobe.813b662b8de7fcb67596cf88116ce28d.svg",
-    "main.08a2157f.css.map": "/RodrigoGallvao.github.io/rodrigogalvao/static/css/main.08a2157f.css.map",
-    "main.dd3737e1.js.map": "/RodrigoGallvao.github.io/rodrigogalvao/static/js/main.dd3737e1.js.map",
-    "453.72d11169.chunk.js.map": "/RodrigoGallvao.github.io/rodrigogalvao/static/js/453.72d11169.chunk.js.map"
+    "main.css": "/rodrigogallvao.github.io/rodrigogalvao/static/css/main.08a2157f.css",
+    "main.js": "/rodrigogallvao.github.io/rodrigogalvao/static/js/main.cff8de8e.js",
+    "static/js/453.72d11169.chunk.js": "/rodrigogallvao.github.io/rodrigogalvao/static/js/453.72d11169.chunk.js",
+    "static/media/LogoGif.gif": "/rodrigogallvao.github.io/rodrigogalvao/static/media/LogoGif.7319d100851927c1a908.gif",
+    "static/media/LogoBlueprint.png": "/rodrigogallvao.github.io/rodrigogalvao/static/media/LogoBlueprint.ebf7936d27d493ddc592.png",
+    "static/media/Rect.svg": "/rodrigogallvao.github.io/rodrigogalvao/static/media/Rect.9c3b32916883a16c4f96ed09251e4c5f.svg",
+    "static/media/Sass.svg": "/rodrigogallvao.github.io/rodrigogalvao/static/media/Sass.05218fc682a0fa0b3f2e486c6b98be10.svg",
+    "static/media/Postman.svg": "/rodrigogallvao.github.io/rodrigogalvao/static/media/Postman.c4994071823b3809fb25953ce93f9b6f.svg",
+    "static/media/Logo.svg": "/rodrigogallvao.github.io/rodrigogalvao/static/media/Logo.7a1fd4b177e9625a6abb9d484a22c903.svg",
+    "static/media/Js.svg": "/rodrigogallvao.github.io/rodrigogalvao/static/media/Js.f103ab1b8bacd0133652c093ebbdf62f.svg",
+    "static/media/Blender.svg": "/rodrigogallvao.github.io/rodrigogalvao/static/media/Blender.08e24d5c8bae8b116340fd5d891eaee0.svg",
+    "static/media/Wordpress.svg": "/rodrigogallvao.github.io/rodrigogalvao/static/media/Wordpress.8ecaccda1d09bc4c34e2f89750a162f3.svg",
+    "static/media/Html5.svg": "/rodrigogallvao.github.io/rodrigogalvao/static/media/Html5.32a6fd94f5af743b4934d44e0b765afe.svg",
+    "index.html": "/rodrigogallvao.github.io/rodrigogalvao/index.html",
+    "static/media/Git.svg": "/rodrigogallvao.github.io/rodrigogalvao/static/media/Git.e08a872dd0a7db9af7ca4a65ef10df01.svg",
+    "static/media/Css.svg": "/rodrigogallvao.github.io/rodrigogalvao/static/media/Css.727f1b0b3f22625483b8afc9189afebf.svg",
+    "static/media/Adobe.svg": "/rodrigogallvao.github.io/rodrigogalvao/static/media/Adobe.813b662b8de7fcb67596cf88116ce28d.svg",
+    "main.08a2157f.css.map": "/rodrigogallvao.github.io/rodrigogalvao/static/css/main.08a2157f.css.map",
+    "main.cff8de8e.js.map": "/rodrigogallvao.github.io/rodrigogalvao/static/js/main.cff8de8e.js.map",
+    "453.72d11169.chunk.js.map": "/rodrigogallvao.github.io/rodrigogalvao/static/js/453.72d11169.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.08a2157f.css",
-    "static/js/main.dd3737e1.js"
+    "static/js/main.cff8de8e.js"
   ]
 }
