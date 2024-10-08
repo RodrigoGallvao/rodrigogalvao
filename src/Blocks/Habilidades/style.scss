@@ -1,0 +1,120 @@
+
+.Habilidades {
+    width: 100vw;
+    min-height: 1080px;
+    background-color: #282828;
+
+    display: flex;
+    flex-flow: column;
+    position: relative;
+}
+
+@keyframes Appear-dgBox {
+    from {
+        height: 10%;
+    }
+    to {
+        height: 89%;
+    }
+}
+
+.diagonal-box {
+    height: 10%;
+    display: flex;
+    flex-flow: column;    
+    position: absolute;
+    top: 50%;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    background-color: #EAEAEA; 	
+    transform: skewY(-3deg) translateY(-50%);
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    overflow: hidden;
+
+    &.in-view {
+        animation: Appear-dgBox 0.8s ease-in-out forwards;
+    }
+
+    -webkit-box-shadow: inset 0px 3px 49px 0px rgba(0,0,0,0.65);
+    -moz-box-shadow: inset 0px 3px 49px 0px rgba(0,0,0,0.65);
+    box-shadow: inset 0px 3px 49px 0px rgba(0,0,0,0.65);
+}
+
+.content { 	
+    background-color: transparent;
+	transform: skewY(3deg);
+    height: 88%;
+    width: 100%;
+    max-width: 1360px;
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    justify-content: center;
+
+    h1 {
+        font-size: 5.5rem;
+        font-weight: 800;
+        text-transform: uppercase;
+        line-height: 5rem;
+        color: #303031;
+
+        &:last-of-type {
+            margin-bottom: 3rem;
+            font-size: 5.2rem;
+        }
+    }
+
+    .Icons {
+        display: flex;
+        flex-flow: column;
+        align-items: center;
+        justify-content: center;
+
+        width: 100%;
+        margin: 0 auto 0.5rem;
+
+        &:last-of-type .Svg div, &:last-of-type .Desc p {
+            width: 6rem;
+        }
+
+        .Svg {
+            height: 100%;
+            display: flex;
+            flex-flow: row;
+
+            div {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                width: 7rem;
+                margin: 0 0.8rem;
+            }
+
+            svg {
+                width: 85%;
+            }
+        }
+
+        .Desc {
+            display: flex;
+            flex-flow: row;
+            height: 2.5rem;
+
+            p {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                height: 100%;
+                width: 7rem;
+                text-align: center;
+                font-size: 1.3rem;
+                margin: 0 0.8rem;
+            }
+        }
+    }
+}
