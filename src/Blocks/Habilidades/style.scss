@@ -1,7 +1,7 @@
 
 .Habilidades {
     width: 100vw;
-    min-height: 1080px;
+    height: 100vh;
     background-color: #282828;
 
     display: flex;
@@ -14,7 +14,7 @@
         height: 10%;
     }
     to {
-        height: 89%;
+        height: 81%;
     }
 }
 
@@ -23,7 +23,7 @@
     display: flex;
     flex-flow: column;    
     position: absolute;
-    top: 50%;
+    top: 54%;
     right: 0;
     left: 0;
     bottom: 0;

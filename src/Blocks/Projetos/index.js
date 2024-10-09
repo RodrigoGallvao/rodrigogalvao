@@ -42,7 +42,7 @@ const Projetos = forwardRef((props, ref) => {
                 <div className="Galeria">
                     <div className={`Line ${showMore ? "showMore" : ""}`}>
 
-                        <div className="Group">
+                        <div className="Group G11">
                             <div>
                                 <button  onClick={handleClick}> abrir </button>
                             </div>
@@ -53,7 +53,7 @@ const Projetos = forwardRef((props, ref) => {
                                 <button  onClick={handleClick}> abrir </button>
                             </div>
                         </div>
-                        <div className="Group">
+                        <div className="Group G12">
                             <div>
                                 <button  onClick={handleClick}> abrir </button>
                             </div>
@@ -68,7 +68,7 @@ const Projetos = forwardRef((props, ref) => {
                     </div>
                     <div className={`Line ${showMore ? "showMore" : ""}`}>
                         
-                        <div className="Group">
+                        <div className="Group G21">
                             <div>
                                 <button  onClick={handleClick}> abrir </button>
                             </div>
@@ -79,7 +79,7 @@ const Projetos = forwardRef((props, ref) => {
                                 <button  onClick={handleClick}> abrir </button>
                             </div>
                         </div>
-                        <div className="Group">
+                        <div className="Group G22">
                             <div>
                                 <button  onClick={handleClick}> abrir </button>
                             </div>

@@ -9,7 +9,7 @@ import {
   Contato,
 } from './Blocks';
 
-import { ReactComponent as Logo } from './Assets/Logo.svg';
+import Logo from "./Assets/Logo.png";
 
 function App() {
   const homeRef = useRef(null);
@@ -29,7 +29,7 @@ function App() {
       <nav className='hotbar'>
         <div>
           <button onClick={() => handleClick(homeRef)}>
-            <Logo /> 
+            <img src={Logo} alt="Logo."/>
           </button>
 
           <div className="Links">

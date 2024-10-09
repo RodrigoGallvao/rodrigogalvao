@@ -1,12 +1,17 @@
-import React, {forwardRef} from "react";
+import React, { useEffect, forwardRef } from 'react';
 import './style.scss';
 
+import initAnimations from '../../scripts/animate';
 import BlueprintLogo from "../../Assets/LogoBlueprint.png";
 
 const SobreMim = forwardRef((props, ref) => {
+    useEffect(() => {
+      initAnimations(); 
+    }, []);
+    
     return (
         <div className="SobreMim" ref={ref}>
-            <img src={BlueprintLogo} alt="Blueprint representation of the logo."/>
+            <img className='animate' src={BlueprintLogo} alt="Blueprint representation of the logo."/>
 
             <div className="SobreMim-Content">
                 <h1 className="title"> Sobre Mim </h1>
