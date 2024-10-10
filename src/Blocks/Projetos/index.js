@@ -1,6 +1,8 @@
 import React, { useState, forwardRef } from "react";
 import './style.scss';
 
+import { ReactComponent as Close } from '../../Assets/Close.svg';
+
 const Projetos = forwardRef((props, ref) => {
 
     const [showMore, setShowMore] = useState(false);
@@ -44,24 +46,37 @@ const Projetos = forwardRef((props, ref) => {
 
                         <div className="Group G11">
                             <div>
-                                <button  onClick={handleClick}> abrir </button>
+                                <button onClick={handleClick}>  
+
+                                    <div>
+                                        <h5> Titulo </h5>
+                                        <span>
+                                            <p> Visualizar </p>
+                                        </span>
+                                    </div>                       
+                                </button>
                             </div>
-                            <div>
-                                <button  onClick={handleClick}> abrir </button>
+                            <div className="disabled">
+                                <button  onClick={handleClick}>                                 
+                                </button>
                             </div>
-                            <div>
-                                <button  onClick={handleClick}> abrir </button>
+                            <div className="disabled">
+                                <button  onClick={handleClick}>                               
+                                </button>
                             </div>
                         </div>
                         <div className="Group G12">
-                            <div>
-                                <button  onClick={handleClick}> abrir </button>
+                            <div className="disabled">
+                                <button  onClick={handleClick}>                                
+                                </button>
                             </div>
-                            <div>
-                                <button  onClick={handleClick}> abrir </button>
+                            <div className="disabled">
+                                <button  onClick={handleClick}>                              
+                                </button>
                             </div>
-                            <div>
-                                <button  onClick={handleClick}> abrir </button>
+                            <div className="disabled">
+                                <button  onClick={handleClick}>                               
+                                </button>
                             </div>
                         </div>
 
@@ -69,31 +84,37 @@ const Projetos = forwardRef((props, ref) => {
                     <div className={`Line ${showMore ? "showMore" : ""}`}>
                         
                         <div className="Group G21">
-                            <div>
-                                <button  onClick={handleClick}> abrir </button>
+                            <div className="disabled">
+                                <button  onClick={handleClick}>                                 
+                                </button>
                             </div>
-                            <div>
-                                <button  onClick={handleClick}> abrir </button>
+                            <div className="disabled">
+                                <button  onClick={handleClick}>                                  
+                                </button>
                             </div>
-                            <div>
-                                <button  onClick={handleClick}> abrir </button>
+                            <div className="disabled">
+                                <button  onClick={handleClick}>                                  
+                                </button>
                             </div>
                         </div>
                         <div className="Group G22">
-                            <div>
-                                <button  onClick={handleClick}> abrir </button>
+                            <div className="disabled">
+                                <button  onClick={handleClick}>                                 
+                                </button>
                             </div>
-                            <div>
-                                <button  onClick={handleClick}> abrir </button>
+                            <div className="disabled">
+                                <button  onClick={handleClick}>                                    
+                                </button>
                             </div>
-                            <div>
-                                <button  onClick={handleClick}> abrir </button>
+                            <div className="disabled">
+                                <button  onClick={handleClick}>                                    
+                                </button>
                             </div>
                         </div>
 
                     </div>
 
-                    <button className="Invert-Button" onClick={() => handleShowMore()} disabled={buttonDisable}> Ver Mais </button>
+                    <button className="Invert-Button hide" onClick={() => handleShowMore()} disabled={buttonDisable}> Ver Mais </button>
                 </div>
 
                 <button className={`Fade ${inspect}`} onClick={() => setInspect("close")}/>
@@ -103,6 +124,9 @@ const Projetos = forwardRef((props, ref) => {
                             <h1> Layout </h1>
                         </div>
                         <div>
+                            <button className="Close-Button" onClick={() => setInspect("close")}>
+                                <Close/>
+                            </button>
                             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus ac accumsan mi. Donec quis ullamcorper ligula, mattis cursus felis. Donec commodo, dolor venenatis iaculis tempus, lorem urna dapibus nunc.</p>
 
                             <a className="Default-Button">

@@ -10,34 +10,73 @@
     position: relative;
 }
 
-.Load {
-    pointer-events: none;
-    background-color: #282828;
-
-    display: flex;
-    position: absolute;
-    top: 50;
-    left: 50;
-    transform: translateX(-50%,-50%);
-
-    margin: auto;
-    width: 20vw;
-    height: auto;
-
-    opacity: 0;
-    transition: opacity 1s ease;
-
-    &.Open {
+@keyframes Roll {
+    0% {
+        opacity: 0;
+        transform: translateY(-30%);
+    }
+    50% {
         opacity: 1;
+        transform: translateY(30%);
     }
+    100% {
+        opacity: 0;
+        transform: translateY(80%);
+    }
+}
 
-    &.hide {
+@keyframes Appear {
+    from {
         opacity: 0;
     }
+    to {
+        opacity: 0.5;
+    }
+}
 
-    &.close {
+.Content {
+    color: #fff;
+    z-index: 1;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex: 1;
+
+    .scroll {
+        display: flex;
+        flex-flow: column;
+        margin: auto auto 4rem;
+        align-items: center;
+        justify-content: center;
+        border: none;
+        background-color: transparent;
         opacity: 0;
-        display: none;
+        pointer-events: none;
+
+        transition: transform 0.3s ease;
+
+        >* {
+            width: 2rem;
+            height: 2rem;
+
+            &:last-of-type {
+                width: 1.5rem;
+
+                animation: Roll 1s ease forwards infinite;
+            }
+        }
+
+        &.show {
+            animation: Appear 3s ease 10s forwards;
+            pointer-events: all;
+        }
+
+        &:hover {
+            transform: scale(1.2) translateY(0.3rem);
+        }
+        &:active {
+            transform: scale(0.9);
+        }
     }
 }
 
@@ -57,6 +96,10 @@
     height: 92vh;
     background: #282828;
     overflow: hidden;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 0;
 }
 
 .background li {

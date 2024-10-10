@@ -33,6 +33,11 @@
     height: 75%;
     width: 100%;
 
+    .hide {
+        opacity: 0;
+        pointer-events: none;
+    }
+
     .Line {
         display: flex;
         flex-flow: row;
@@ -106,6 +111,7 @@
 
             .Item, >div {
                 display: flex;
+                flex-flow: column;
                 height: 100%;
                 width: 32%;
                 margin: 0;
@@ -116,10 +122,72 @@
                 justify-content: center;
                 overflow: hidden;
 
+                transition: transform 0.2s ease;
+                &:hover {
+                    transform: scale(1.05);
+
+                    button div {
+                        max-height: 20%;
+
+                        >* {
+                            opacity: 1;
+                        }
+                    }
+                }
+
+                &:active {
+                    transform: scale(0.95);
+                }
+
                 button {
                     width: 100%;
                     height: 100%;
                     border: none;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    padding: 0;
+
+                    div {
+                        background-color: #282828ab;
+                        width: 100%;
+                        height: 100%;
+                        max-height: 0%;
+                        margin-top: auto;
+                        display: flex;
+                        align-items: center;
+                        justify-content: space-between;
+                        pointer-events: none;
+                        padding: 0 1rem;
+                        overflow: hidden;
+
+                        transition: max-height 0.3s ease;
+
+                        >* {
+                            transition: opacity 0.2s ease;
+                            opacity: 0;
+                        }
+
+                        color: #fff;                        
+                        h5 {
+                            font-size: 1.5rem;
+                            font-weight: 500;
+                            text-shadow: 3px 2px 3px rgba(255, 255, 255, 0.2), 2px 2px 4px #000000;
+                        }
+                        span {
+                            background-color: #282828;
+                            width: fit-content;
+                            padding: 0.4rem 0.9rem;
+                            border-radius: 0.8rem;
+                            font-weight: 300;
+                            font-size: 1.1rem;
+                        }
+                    }
+                }
+
+                &.disabled {
+                    opacity: 0;
+                    pointer-events: none;
                 }
             }
         }
@@ -235,7 +303,40 @@
 
         >div:last-of-type {
             background-color: #EAEAEA;
-            padding-top: 8rem;
+        }
+
+        .Close-Button {
+            margin: 0 0 3rem auto;
+            width: 2.3rem;
+            height: 2.3rem;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border: none;
+            background-color: transparent;
+            color: #fff;
+            border-radius: 2rem;
+            opacity: 1;
+        
+            transition: transform 0.3s ease, opacity 0.3s ease-in-out, background-color 0.2s ease; 
+        
+            &:hover {
+              transform: scale(1.2);
+              background-color: #282828;
+
+              * {
+                fill: #fff;
+              }
+            }
+
+            &:active {
+                transform: scale(0.9);
+            }
+
+            >* {
+                width: 2.3rem;
+                height: 2.3rem;
+            }
         }
     }
 }

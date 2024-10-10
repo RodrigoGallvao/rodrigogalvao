@@ -1,4 +1,4 @@
-import React, { useRef } from 'react';
+import React, { useRef, useState, useEffect } from 'react';
 import './App.scss';
 
 import { 
@@ -17,22 +17,38 @@ function App() {
   const habilidadesRef = useRef(null);
   const projetosRef = useRef(null);
   const contatoRef = useRef(null);
+  const mainWrapperRef = useRef(null);
 
   const handleClick = (ref) => {
     ref.current?.scrollIntoView({ behavior: 'smooth' });
   };
 
-  return (
-    <div className="MainWrapper">
-      <Home ref={homeRef}/>
+  const [scrollY, setScrollY] = useState(0);
+  useEffect(() => {
+    const handleScroll = () => {
+      if (mainWrapperRef.current) {
+        setScrollY(mainWrapperRef.current.scrollTop); 
+      }
+    };
 
-      <nav className='hotbar'>
+    const wrapper = mainWrapperRef.current;
+    wrapper.addEventListener('scroll', handleScroll);
+
+    return () => {
+      wrapper.removeEventListener('scroll', handleScroll);
+    };
+  }, []);
+
+  return (
+    <div className="MainWrapper" ref={mainWrapperRef}> 
+
+      <nav className={`hotbar ${scrollY < 100 && "darker"}`}>
         <div>
-          <button onClick={() => handleClick(homeRef)}>
+          <button onClick={() => {scrollY > 100 && handleClick(homeRef)}}>
             <img src={Logo} alt="Logo."/>
           </button>
 
-          <div className="Links">
+          <div className="Links"> 
             <button onClick={() => handleClick(sobreMimRef)}> 
               Sobre Mim 
               <hr/>
@@ -53,6 +69,7 @@ function App() {
         </div>
       </nav>
 
+      <Home ref={homeRef} scrollY={scrollY < 100}/>
       <SobreMim ref={sobreMimRef}/>
       <Habilidades ref={habilidadesRef}/>
       <Projetos ref={projetosRef}/>

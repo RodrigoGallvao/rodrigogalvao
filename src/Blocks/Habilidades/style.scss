@@ -93,6 +93,11 @@
                 justify-content: center;
                 width: 7rem;
                 margin: 0 0.8rem;
+
+                transition: transform 0.2s ease;
+                &:hover {
+                    transform: scale(1.2);
+                }
             }
 
             svg {
