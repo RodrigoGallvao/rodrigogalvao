@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/rodrigogalvao/static/css/main.1a972ed4.css",
-    "main.js": "/rodrigogalvao/static/js/main.0fa1c3c1.js",
+    "main.css": "/rodrigogalvao/static/css/main.1b3bbd0b.css",
+    "main.js": "/rodrigogalvao/static/js/main.d58f8366.js",
     "static/js/453.72d11169.chunk.js": "/rodrigogalvao/static/js/453.72d11169.chunk.js",
     "static/media/LogoBlueprint.png": "/rodrigogalvao/static/media/LogoBlueprint.ebf7936d27d493ddc592.png",
     "static/media/Rect.svg": "/rodrigogalvao/static/media/Rect.9c3b32916883a16c4f96ed09251e4c5f.svg",
@@ -10,17 +10,20 @@
     "static/media/Js.svg": "/rodrigogalvao/static/media/Js.f103ab1b8bacd0133652c093ebbdf62f.svg",
     "static/media/Blender.svg": "/rodrigogalvao/static/media/Blender.08e24d5c8bae8b116340fd5d891eaee0.svg",
     "static/media/Wordpress.svg": "/rodrigogalvao/static/media/Wordpress.8ecaccda1d09bc4c34e2f89750a162f3.svg",
-    "static/media/Html5.svg": "/rodrigogalvao/static/media/Html5.32a6fd94f5af743b4934d44e0b765afe.svg",
     "index.html": "/rodrigogalvao/index.html",
+    "static/media/Mouse.svg": "/rodrigogalvao/static/media/Mouse.baacb1a9307a05f1bcdd82d6a41e1a09.svg",
+    "static/media/Html5.svg": "/rodrigogalvao/static/media/Html5.32a6fd94f5af743b4934d44e0b765afe.svg",
+    "static/media/Bellow.svg": "/rodrigogalvao/static/media/Bellow.50531178cdfe2b8b04d6bed955a8f9b8.svg",
+    "static/media/Close.svg": "/rodrigogalvao/static/media/Close.7a4bb306e01339f1a9ecc0dbfd566f5f.svg",
     "static/media/Git.svg": "/rodrigogalvao/static/media/Git.e08a872dd0a7db9af7ca4a65ef10df01.svg",
     "static/media/Css.svg": "/rodrigogalvao/static/media/Css.727f1b0b3f22625483b8afc9189afebf.svg",
     "static/media/Adobe.svg": "/rodrigogalvao/static/media/Adobe.813b662b8de7fcb67596cf88116ce28d.svg",
-    "main.1a972ed4.css.map": "/rodrigogalvao/static/css/main.1a972ed4.css.map",
-    "main.0fa1c3c1.js.map": "/rodrigogalvao/static/js/main.0fa1c3c1.js.map",
+    "main.1b3bbd0b.css.map": "/rodrigogalvao/static/css/main.1b3bbd0b.css.map",
+    "main.d58f8366.js.map": "/rodrigogalvao/static/js/main.d58f8366.js.map",
     "453.72d11169.chunk.js.map": "/rodrigogalvao/static/js/453.72d11169.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.1a972ed4.css",
-    "static/js/main.0fa1c3c1.js"
+    "static/css/main.1b3bbd0b.css",
+    "static/js/main.d58f8366.js"
   ]
 }
