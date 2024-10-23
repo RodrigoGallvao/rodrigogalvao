@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/rodrigogalvao/static/css/main.1b3bbd0b.css",
-    "main.js": "/rodrigogalvao/static/js/main.d58f8366.js",
+    "main.css": "/rodrigogalvao/static/css/main.9c647899.css",
+    "main.js": "/rodrigogalvao/static/js/main.2850bb12.js",
     "static/js/453.72d11169.chunk.js": "/rodrigogalvao/static/js/453.72d11169.chunk.js",
     "static/media/LogoBlueprint.png": "/rodrigogalvao/static/media/LogoBlueprint.ebf7936d27d493ddc592.png",
     "static/media/Rect.svg": "/rodrigogalvao/static/media/Rect.9c3b32916883a16c4f96ed09251e4c5f.svg",
@@ -18,12 +18,12 @@
     "static/media/Git.svg": "/rodrigogalvao/static/media/Git.e08a872dd0a7db9af7ca4a65ef10df01.svg",
     "static/media/Css.svg": "/rodrigogalvao/static/media/Css.727f1b0b3f22625483b8afc9189afebf.svg",
     "static/media/Adobe.svg": "/rodrigogalvao/static/media/Adobe.813b662b8de7fcb67596cf88116ce28d.svg",
-    "main.1b3bbd0b.css.map": "/rodrigogalvao/static/css/main.1b3bbd0b.css.map",
-    "main.d58f8366.js.map": "/rodrigogalvao/static/js/main.d58f8366.js.map",
+    "main.9c647899.css.map": "/rodrigogalvao/static/css/main.9c647899.css.map",
+    "main.2850bb12.js.map": "/rodrigogalvao/static/js/main.2850bb12.js.map",
     "453.72d11169.chunk.js.map": "/rodrigogalvao/static/js/453.72d11169.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.1b3bbd0b.css",
-    "static/js/main.d58f8366.js"
+    "static/css/main.9c647899.css",
+    "static/js/main.2850bb12.js"
   ]
 }
