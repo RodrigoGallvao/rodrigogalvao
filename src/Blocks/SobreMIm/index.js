@@ -16,7 +16,7 @@ const SobreMim = forwardRef((props, ref) => {
             <div className="SobreMim-Content">
                 <h1 className="title"> Sobre Mim </h1>
 
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus ac accumsan mi. Donec quis ullamcorper ligula, mattis cursus felis. Donec commodo, dolor venenatis iaculis tempus, lorem urna dapibus nunc, vitae iaculis purus erat a enim. Aenean mi lectus, sodales ac rutrum et, rhoncus ac lectus. Quisque molestie arcu sed blandit commodo. Donec felis arcu, congue at ex nec, euismod faucibus nulla. Cras feugiat leo felis, ut viverra neque hendrerit non.</p>
+                <p> Desenvolvedor Front-end, com ampla experiência em React. Apaixonado por design e criação de layouts e animações para websites e desenvolvimento de identidade visual, unindo criatividade e técnica no desenvolvimento de soluções digitais integradas.</p>
             </div>
         </div>
     );

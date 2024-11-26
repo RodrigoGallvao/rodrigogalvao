@@ -46,8 +46,7 @@ const Projetos = forwardRef((props, ref) => {
 
                         <div className="Group G11">
                             <div>
-                                <button onClick={handleClick}>  
-
+                                <button onClick={handleClick}>
                                     <div>
                                         <h5> Titulo </h5>
                                         <span>
@@ -56,26 +55,56 @@ const Projetos = forwardRef((props, ref) => {
                                     </div>                       
                                 </button>
                             </div>
-                            <div className="disabled">
-                                <button  onClick={handleClick}>                                 
+                            <div >
+                                <button  onClick={handleClick}>
+                                    <div>
+                                        <h5> Titulo </h5>
+                                        <span>
+                                            <p> Visualizar </p>
+                                        </span>
+                                    </div>                                 
                                 </button>
                             </div>
-                            <div className="disabled">
-                                <button  onClick={handleClick}>                               
+                            <div >
+                                <button  onClick={handleClick}>
+                                    <div>
+                                        <h5> Titulo </h5>
+                                        <span>
+                                            <p> Visualizar </p>
+                                        </span>
+                                    </div>                               
                                 </button>
                             </div>
                         </div>
                         <div className="Group G12">
-                            <div className="disabled">
-                                <button  onClick={handleClick}>                                
+                            <div >
+                                <button  onClick={handleClick}>
+                                    <div>
+                                        <h5> Titulo </h5>
+                                        <span>
+                                            <p> Visualizar </p>
+                                        </span>
+                                    </div>                                
                                 </button>
                             </div>
-                            <div className="disabled">
-                                <button  onClick={handleClick}>                              
+                            <div >
+                                <button  onClick={handleClick}>
+                                    <div>
+                                        <h5> Titulo </h5>
+                                        <span>
+                                            <p> Visualizar </p>
+                                        </span>
+                                    </div>                              
                                 </button>
                             </div>
-                            <div className="disabled">
-                                <button  onClick={handleClick}>                               
+                            <div >
+                                <button  onClick={handleClick}>
+                                    <div>
+                                        <h5> Titulo </h5>
+                                        <span>
+                                            <p> Visualizar </p>
+                                        </span>
+                                    </div>                               
                                 </button>
                             </div>
                         </div>
@@ -84,30 +113,66 @@ const Projetos = forwardRef((props, ref) => {
                     <div className={`Line ${showMore ? "showMore" : ""}`}>
                         
                         <div className="Group G21">
-                            <div className="disabled">
-                                <button  onClick={handleClick}>                                 
+                            <div >
+                                <button  onClick={handleClick}>
+                                    <div>
+                                        <h5> Titulo </h5>
+                                        <span>
+                                            <p> Visualizar </p>
+                                        </span>
+                                    </div>                                 
                                 </button>
                             </div>
-                            <div className="disabled">
-                                <button  onClick={handleClick}>                                  
+                            <div >
+                                <button  onClick={handleClick}>
+                                    <div>
+                                        <h5> Titulo </h5>
+                                        <span>
+                                            <p> Visualizar </p>
+                                        </span>
+                                    </div>                                  
                                 </button>
                             </div>
-                            <div className="disabled">
-                                <button  onClick={handleClick}>                                  
+                            <div >
+                                <button  onClick={handleClick}>
+                                    <div>
+                                        <h5> Titulo </h5>
+                                        <span>
+                                            <p> Visualizar </p>
+                                        </span>
+                                    </div>                                  
                                 </button>
                             </div>
                         </div>
                         <div className="Group G22">
-                            <div className="disabled">
-                                <button  onClick={handleClick}>                                 
+                            <div >
+                                <button  onClick={handleClick}>
+                                    <div>
+                                        <h5> Titulo </h5>
+                                        <span>
+                                            <p> Visualizar </p>
+                                        </span>
+                                    </div>                                 
                                 </button>
                             </div>
-                            <div className="disabled">
-                                <button  onClick={handleClick}>                                    
+                            <div >
+                                <button  onClick={handleClick}>
+                                    <div>
+                                        <h5> Titulo </h5>
+                                        <span>
+                                            <p> Visualizar </p>
+                                        </span>
+                                    </div>                                    
                                 </button>
                             </div>
-                            <div className="disabled">
-                                <button  onClick={handleClick}>                                    
+                            <div >
+                                <button  onClick={handleClick}>
+                                    <div>
+                                        <h5> Titulo </h5>
+                                        <span>
+                                            <p> Visualizar </p>
+                                        </span>
+                                    </div>                                    
                                 </button>
                             </div>
                         </div>
