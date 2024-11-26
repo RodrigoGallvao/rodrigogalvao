@@ -1,9 +1,11 @@
 {
   "files": {
     "main.css": "/rodrigogalvao/static/css/main.e630eb75.css",
-    "main.js": "/rodrigogalvao/static/js/main.bad4e8cd.js",
+    "main.js": "/rodrigogalvao/static/js/main.de7ecca0.js",
     "static/js/453.72d11169.chunk.js": "/rodrigogalvao/static/js/453.72d11169.chunk.js",
     "static/media/LogoBlueprint.png": "/rodrigogalvao/static/media/LogoBlueprint.ebf7936d27d493ddc592.png",
+    "static/media/vehicles.riv": "/rodrigogalvao/static/media/vehicles.483cd449536cdbdd0d6f.riv",
+    "static/media/catLookAtMouse.riv": "/rodrigogalvao/static/media/catLookAtMouse.ef40f799e4ce166ee3dd.riv",
     "static/media/Phone.png": "/rodrigogalvao/static/media/Phone.8786c4342b7c593737b5.png",
     "static/media/MapMark.png": "/rodrigogalvao/static/media/MapMark.83cae6911893fd214b10.png",
     "static/media/Mail.png": "/rodrigogalvao/static/media/Mail.99bcb6a0d3b0b4d3deeb.png",
@@ -23,11 +25,11 @@
     "static/media/Css.svg": "/rodrigogalvao/static/media/Css.727f1b0b3f22625483b8afc9189afebf.svg",
     "static/media/Adobe.svg": "/rodrigogalvao/static/media/Adobe.813b662b8de7fcb67596cf88116ce28d.svg",
     "main.e630eb75.css.map": "/rodrigogalvao/static/css/main.e630eb75.css.map",
-    "main.bad4e8cd.js.map": "/rodrigogalvao/static/js/main.bad4e8cd.js.map",
+    "main.de7ecca0.js.map": "/rodrigogalvao/static/js/main.de7ecca0.js.map",
     "453.72d11169.chunk.js.map": "/rodrigogalvao/static/js/453.72d11169.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.e630eb75.css",
-    "static/js/main.bad4e8cd.js"
+    "static/js/main.de7ecca0.js"
   ]
 }
