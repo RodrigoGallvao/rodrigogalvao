@@ -10,15 +10,15 @@
     
     display: flex;
     align-items: center;
-    justify-content: flex-end;
-    padding-top: 8rem;
+    justify-content: center;
+    padding-top: 5rem;
 }
 
 .Projetos-Content {
     width: 100%;
     max-width: 1920px;
-    height: 100%;
-    margin: auto auto 0;
+    height: 93%;
+    margin: 0 auto;
     padding: 0 5rem;
 
     display: flex;
@@ -30,8 +30,24 @@
     flex-flow: column;
     align-items: center;
     justify-content: space-between;
-    height: 75%;
+    height: 100%;
     width: 100%;
+
+    >* {
+        height: 45%;
+    }
+    
+    >*:last-child {
+        height: 7%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        button {
+            width: fit-content;
+            height: fit-content;
+        }
+    }
 
     .hide {
         opacity: 0;
@@ -41,7 +57,6 @@
     .Line {
         display: flex;
         flex-flow: row;
-        height: 43%;
         width: 100%;
         position: relative;
 
@@ -109,10 +124,10 @@
 
             position: absolute;
 
-            .Item, >div {
+            .Item {
                 display: flex;
                 flex-flow: column;
-                height: 100%;
+                height: 96%;
                 width: 32%;
                 margin: 0;
                 background-color: #EAEAEA;
@@ -233,25 +248,25 @@
     justify-content: center;
     background-color: #CDCCCC;
     height: 100%;
-    width: 100%;
-    max-width: 70vw;
+    width: 90%;
+    max-width: 1335px;
     position: fixed;
     top: 0;
     left: var(--left-value);
     transform: translateX(-50%);
     overflow: hidden;
 
-    transition: max-width 0.5s ease;
+    transition: max-width 0.5s ease 0.3s;
 
     &.open {
-        max-width: 70vw;
+        max-width: 1335px;
         left: var(--left-value);
     }
     &.move {
-        max-width: 70vw;
+        max-width: 1335px;
         left: 50%;
 
-        transition: max-width 0.5s ease, left 0.3s ease-out;
+        transition: max-width 0.5s ease 0.3s, left 0.3s ease-out 0.2s;
     }
     &.close {
         max-width: 0%;
@@ -264,24 +279,43 @@
         display: flex;
         flex-flow: row;
         flex-shrink: 0;
-        width: 70vw;
+        width: 90vw;
+        max-width: 1335px;
         height: 100%;
+
+        overflow-y: scroll;
+        overflow-x: hidden;
+
+        >div {
+            width: 100%;
+            height: 100%;
+            display: flex;
+            flex-flow: row;
+        }
 
         h1 {
             font-size: 4rem;
             font-weight: 700;
             color: #303031;
-            margin-bottom: 1rem;
+            margin: 0 0 1rem 0.5rem;
             font-style: italic;
         }
 
-        >div {
+        h2 {
+            font-size: 2.5rem;
+            font-weight: 700;
+            color: #303031;
+            margin: 1.5rem 0 0 0.5rem;
+            font-style: italic;
+        }
+
+        .Side {
             display: flex;
             flex-flow: column;
             height: 100%;
             width: 50%;
             background-color: #CDCCCC;
-            padding: 3rem 2rem;
+            padding: 1rem 2rem 3rem;
             overflow-y: auto;
 
             &::-webkit-scrollbar {
@@ -301,8 +335,42 @@
             }
         }
 
-        >div:last-of-type {
+        .Side:last-of-type {
             background-color: #EAEAEA;
+        }
+
+        .Vertical-Content {
+            display: flex;
+            flex-flow: column;
+            width: 100%;
+            height: 100%;
+            align-items: center;
+            justify-self: flex-start;
+            padding: 1rem 2rem;
+
+            .Line {
+                display: flex;
+                flex-flow: row;
+                width: 100%;
+            }
+
+            .Block {
+                display: flex;
+                flex-flow: column;
+                align-items: flex-start;
+                justify-content: flex-start;
+                width: 100%;
+                margin-top: 1rem;
+            }
+        }
+
+        .Window {
+            flex-shrink: 0;
+            display: flex;
+            width: 100%;
+            height: fit-content;
+            overflow: hidden;
+            border-radius: 3rem;
         }
 
         .Close-Button {
@@ -339,4 +407,26 @@
             }
         }
     }
+
+    /* ===== Scrollbar CSS ===== */
+  /* Firefox */
+  * {
+    scrollbar-width: 5px;
+    scrollbar-color: #7e7e7e;
+  }
+
+  /* Chrome, Edge, and Safari */
+  *::-webkit-scrollbar {
+    width: 5px;
+  }
+
+  *::-webkit-scrollbar-track {
+    background: #CDCCCC;
+  }
+
+  *::-webkit-scrollbar-thumb {
+    background-color: #7e7e7e;
+    border-radius: 10px;
+    border: 0px;
+  }
 }

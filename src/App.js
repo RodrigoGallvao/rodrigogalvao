@@ -5,7 +5,6 @@ import {
   Home,
   SobreMim,
   Habilidades,
-  Destaque,
   Projetos,
   Contato,
 } from './Blocks';
@@ -16,7 +15,6 @@ function App() {
   const homeRef = useRef(null);
   const sobreMimRef = useRef(null);
   const habilidadesRef = useRef(null);
-  const destaqueRef = useRef(null);
   const projetosRef = useRef(null);
   const contatoRef = useRef(null);
   const mainWrapperRef = useRef(null);
@@ -59,7 +57,7 @@ function App() {
               Habilidades 
               <hr/>
             </button>
-            <button onClick={() => handleClick(destaqueRef)}> 
+            <button onClick={() => handleClick(projetosRef)}> 
               Projetos 
               <hr/>
             </button>
@@ -74,9 +72,8 @@ function App() {
       <Home ref={homeRef} scrollY={scrollY < 100}/>
       <SobreMim ref={sobreMimRef}/>
       <Habilidades ref={habilidadesRef}/>
-      <Destaque ref={destaqueRef}/>
       <Projetos ref={projetosRef}/>
-      <Contato ref={contatoRef}/>
+      <Contato ref={contatoRef} homeRef={homeRef}/>
     </div>
   );
 }

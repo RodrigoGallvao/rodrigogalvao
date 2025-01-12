@@ -1,20 +1,25 @@
 import React, { useState, forwardRef } from "react";
 import './style.scss';
 
-import { ReactComponent as Close } from '../../Assets/Close.svg';
+import Item from "./Projetos/item";
+import Base from "./Projetos/base";
+import Example from "./Projetos/example";
+import Project1 from "./Projetos/Project1";
 
 const Projetos = forwardRef((props, ref) => {
 
     const [showMore, setShowMore] = useState(false);
     const [buttonDisable, setButtonDisable] = useState(false);
     const [inspect, setInspect] = useState("close");
+    const [project, setProject] = useState(0);
 
     const [left, setLeft] = useState(0);
-    const handleClick = (event) => {
+    const handleClick = (event, passInt) => {
         const buttonPosition = event.target.getBoundingClientRect();
         const buttonCenter = buttonPosition.left + buttonPosition.width / 2;
         setLeft(buttonCenter);
-      
+        setProject(passInt);
+
         setTimeout(() => {
           setInspect("move");
         }, 100);
@@ -45,161 +50,45 @@ const Projetos = forwardRef((props, ref) => {
                     <div className={`Line ${showMore ? "showMore" : ""}`}>
 
                         <div className="Group G11">
-                            <div>
-                                <button onClick={handleClick}>
-                                    <div>
-                                        <h5> Titulo </h5>
-                                        <span>
-                                            <p> Visualizar </p>
-                                        </span>
-                                    </div>                       
-                                </button>
-                            </div>
-                            <div >
-                                <button  onClick={handleClick}>
-                                    <div>
-                                        <h5> Titulo </h5>
-                                        <span>
-                                            <p> Visualizar </p>
-                                        </span>
-                                    </div>                                 
-                                </button>
-                            </div>
-                            <div >
-                                <button  onClick={handleClick}>
-                                    <div>
-                                        <h5> Titulo </h5>
-                                        <span>
-                                            <p> Visualizar </p>
-                                        </span>
-                                    </div>                               
-                                </button>
-                            </div>
+                            <Item className="Item" titulo={"Rive"} handleClick={(event) => handleClick(event, 1)} />
+                            <Item className="Item" handleClick={handleClick} titulo={"Titulo"} />
+                            <Item className="Item" handleClick={handleClick} titulo={"Titulo"} />
                         </div>
                         <div className="Group G12">
-                            <div >
-                                <button  onClick={handleClick}>
-                                    <div>
-                                        <h5> Titulo </h5>
-                                        <span>
-                                            <p> Visualizar </p>
-                                        </span>
-                                    </div>                                
-                                </button>
-                            </div>
-                            <div >
-                                <button  onClick={handleClick}>
-                                    <div>
-                                        <h5> Titulo </h5>
-                                        <span>
-                                            <p> Visualizar </p>
-                                        </span>
-                                    </div>                              
-                                </button>
-                            </div>
-                            <div >
-                                <button  onClick={handleClick}>
-                                    <div>
-                                        <h5> Titulo </h5>
-                                        <span>
-                                            <p> Visualizar </p>
-                                        </span>
-                                    </div>                               
-                                </button>
-                            </div>
+                            <Item className="Item" handleClick={handleClick} titulo={"Titulo"} />
+                            <Item className="Item" handleClick={handleClick} titulo={"Titulo"} />
+                            <Item className="Item" handleClick={handleClick} titulo={"Titulo"} />
                         </div>
 
                     </div>
                     <div className={`Line ${showMore ? "showMore" : ""}`}>
                         
                         <div className="Group G21">
-                            <div >
-                                <button  onClick={handleClick}>
-                                    <div>
-                                        <h5> Titulo </h5>
-                                        <span>
-                                            <p> Visualizar </p>
-                                        </span>
-                                    </div>                                 
-                                </button>
-                            </div>
-                            <div >
-                                <button  onClick={handleClick}>
-                                    <div>
-                                        <h5> Titulo </h5>
-                                        <span>
-                                            <p> Visualizar </p>
-                                        </span>
-                                    </div>                                  
-                                </button>
-                            </div>
-                            <div >
-                                <button  onClick={handleClick}>
-                                    <div>
-                                        <h5> Titulo </h5>
-                                        <span>
-                                            <p> Visualizar </p>
-                                        </span>
-                                    </div>                                  
-                                </button>
-                            </div>
+                            <Item className="Item" handleClick={handleClick} titulo={"Titulo"} />
+                            <Item className="Item" handleClick={handleClick} titulo={"Titulo"} />
+                            <Item className="Item" handleClick={handleClick} titulo={"Titulo"} />
                         </div>
                         <div className="Group G22">
-                            <div >
-                                <button  onClick={handleClick}>
-                                    <div>
-                                        <h5> Titulo </h5>
-                                        <span>
-                                            <p> Visualizar </p>
-                                        </span>
-                                    </div>                                 
-                                </button>
-                            </div>
-                            <div >
-                                <button  onClick={handleClick}>
-                                    <div>
-                                        <h5> Titulo </h5>
-                                        <span>
-                                            <p> Visualizar </p>
-                                        </span>
-                                    </div>                                    
-                                </button>
-                            </div>
-                            <div >
-                                <button  onClick={handleClick}>
-                                    <div>
-                                        <h5> Titulo </h5>
-                                        <span>
-                                            <p> Visualizar </p>
-                                        </span>
-                                    </div>                                    
-                                </button>
-                            </div>
+                            <Item className="Item" handleClick={handleClick} titulo={"Titulo"} />
+                            <Item className="Item" handleClick={handleClick} titulo={"Titulo"} />
+                            <Item className="Item" handleClick={handleClick} titulo={"Titulo"} />
                         </div>
 
                     </div>
 
-                    <button className="Invert-Button hide" onClick={() => handleShowMore()} disabled={buttonDisable}> Ver Mais </button>
+                    <div>
+                        <button className="Invert-Button" onClick={() => handleShowMore()} disabled={buttonDisable}> Ver Mais </button>
+                    </div>
                 </div>
 
                 <button className={`Fade ${inspect}`} onClick={() => setInspect("close")}/>
-                <div className={`Inspect ${inspect}`}>
-                    <div className="Inspect-Content">
-                        <div>
-                            <h1> Layout </h1>
-                        </div>
-                        <div>
-                            <button className="Close-Button" onClick={() => setInspect("close")}>
-                                <Close/>
-                            </button>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus ac accumsan mi. Donec quis ullamcorper ligula, mattis cursus felis. Donec commodo, dolor venenatis iaculis tempus, lorem urna dapibus nunc.</p>
-
-                            <a className="Default-Button">
-                                Visitar Website
-                            </a>                               
-                        </div>
-                    </div>
-                </div>
+                <Base className={`Inspect ${inspect}`}> 
+                    { project === 1 ?
+                        <Project1 title={'aa'} handleClose={() => setInspect("close")}/>
+                        :
+                        <Example handleClose={() => setInspect("close")}/>
+                    }
+                </Base>
             </div>
         </div> 
     );

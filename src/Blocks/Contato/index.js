@@ -1,4 +1,4 @@
-import React, { forwardRef } from "react";
+import React, { useRef, forwardRef } from "react";
 import './style.scss';
 
 import Mail from "../../Assets/Mail.png";
@@ -7,7 +7,11 @@ import Phone from "../../Assets/Phone.png";
 
 import LogoInvert from "../../Assets/LogoInvert.png";
 
-const Contato = forwardRef((props, ref) => {
+const Contato = forwardRef(({ homeRef }, ref) => {
+    const scrollToTop = () => {
+      homeRef.current?.scrollIntoView({ behavior: "smooth" });
+    };
+    
     return (
         <div className="Contato" ref={ref}>
 
@@ -24,7 +28,9 @@ const Contato = forwardRef((props, ref) => {
 
                         <div>
                             <div className="item"> 
-                                <img src={Phone} alt="Telefone de contato: (34) 99968-3135."/> 
+                                <a title='Entre em contato pelo Whatsapp' href="https://wa.me/5534999683135" target="_blank" rel="noreferrer">
+                                    <img src={Phone} alt="Telefone de contato: (34) 99968-3135."/> 
+                                </a>
                                 <span>
                                     Telefone 
                                     <p> (34) 99968-3135 </p>
@@ -32,15 +38,19 @@ const Contato = forwardRef((props, ref) => {
                             </div>
                             
                             <div className="item"> 
-                                <img src={Mail} alt="Email de contato: rodrigogallvao@gmail.com."/> 
+                                <a title='Entre em contato por e-mail' href="mailto:rodrigogallvao@gmail.com" target="_blank" rel="noreferrer">
+                                    <img src={Mail} alt="Email de contato: rodrigogallvao@gmail.com."/> 
+                                </a>
                                 <span>
                                     E-Mail 
                                     <p> rodrigogallvao@gmail.com </p>
                                 </span>
                             </div>
                             
-                            <div className="item"> 
-                                <img src={MapMark} alt="Região: Minas Gerais, Brasil."/> 
+                            <div className="item">
+                                <div>
+                                    <img src={MapMark} alt="Região: Minas Gerais, Brasil."/> 
+                                </div> 
                                 <span>
                                     Localização 
                                     <p> Minas Gerais, Brasil </p>
@@ -49,8 +59,10 @@ const Contato = forwardRef((props, ref) => {
                         </div>
 
                         <div className="footer">
-                            <div className="item"> 
-                                <img src={LogoInvert} alt="Logo."/>
+                            <div className="item">
+                                <button title='▲' onClick={scrollToTop}>
+                                    <img src={LogoInvert} alt="Logo."/>
+                                </button> 
                                 <span>
                                     Rodrigo Galvão Barbosa
                                     <p> Desenvolvedor Front-End </p>
@@ -60,13 +72,13 @@ const Contato = forwardRef((props, ref) => {
                     </div>
                 </div>
 
-                <div className="otherHalf">
+                <div className="Outros">
                     <div>
                         <h1 className="title">
                             Outros <br/> Interesses
                         </h1>
 
-                        <div className="Galeria">
+                        <div className="OutrosGaleria">
                             <div></div>
                             <div></div>
                             <div></div>

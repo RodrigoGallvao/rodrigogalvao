@@ -28,7 +28,7 @@ const Habilidades = forwardRef((props, ref) => {
                     <h1> & Habilidades </h1>
 
                     <div className="Icons">
-                        <div className="Svg">
+                        <div className="Svg"> 
                             <div>
                                 <Html5/>    
                             </div>

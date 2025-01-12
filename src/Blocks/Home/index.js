@@ -8,7 +8,6 @@ const Home = forwardRef(({ scrollY }, ref) => {
     const me = useRef(null);
     const handleClick = (ref) => {
         ref.current?.scrollIntoView({ behavior: 'smooth' });
-        console.log(scrollY);
     };
 
     return (

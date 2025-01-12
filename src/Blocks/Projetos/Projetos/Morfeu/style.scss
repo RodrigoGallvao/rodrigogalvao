@@ -1,0 +1,222 @@
+:root {
+    --left-value: 0px;  
+}
+
+.Rive {
+    flex-shrink: 0;
+    width: 100%;
+    position: relative;
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-flow: column;
+
+    h1.title {
+        margin-left: 5rem;
+    }
+}
+
+.Rive-Container {
+    cursor: grab;
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    height: 340px;
+    flex-shrink: 0;
+
+    >div {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 1266px;
+        height: 340px;
+    }
+}
+
+.Controls {
+    background-color: #E8E8E8;
+    width: 100%;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.Outline {
+    outline: 1px solid red;
+}
+
+.Appear {
+    animation: fadeIn 0.5s ease-in;
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  80% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.Menu {
+    display: flex;
+    flex-flow: column;
+    height: 100%;
+    max-width: 700px;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+
+    >* {
+        transition: opacity 0.5s ease 2s;
+    }
+
+    .buttons >* {
+        margin: 0.5rem 0;
+    }
+
+    .hide {
+        opacity: 0;
+        pointer-events: none;
+        transition: opacity 0.5s ease;
+    }
+
+    .StartButton {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+
+    .row {
+        display: flex;
+        flex-flow: row;
+        width: 90%;
+        align-items: center;
+        justify-content: flex-end;
+        overflow: hidden;
+
+        p {
+            font-size: 2.5rem;
+        }
+
+        input {
+            width: 2rem;
+        }
+    }
+
+    input {
+        width: 18rem;
+        height: 2.5rem;
+        border-radius: 0.5rem;
+        border: 2px solid #63c400;
+        padding: 0.1rem 0.5rem;
+
+        font-size: 1.3rem;
+
+        &::placeholder {
+            font-size: 1.3rem;
+        }
+
+        &:focus {
+            outline: none;
+            border-color: #75ea00;
+        }
+    }
+
+    .Password {
+        width: fit-content;
+        height: fit-content;
+        position: relative;
+
+        .ShowPassword {
+            overflow: hidden;
+            position: absolute;
+            top: 0;
+            right: 0;
+
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 3.5rem;
+            height: 2.8rem;
+
+            background-color: #63c400;
+
+            border-top-right-radius: 0.5rem;
+            border-top-left-radius: 0;
+            border-bottom-right-radius: 0.5rem;
+            border-bottom-left-radius: 0;
+
+            >* {
+                width: 2.5rem;
+            }
+        }
+    }
+}
+
+button {
+    background-color: transparent;
+    border: none;
+    display: flex;
+    width: fit-content;
+    height: fit-content;
+    width: 5rem;
+    height: 5rem;   
+    
+    &:disabled {
+        opacity: 0.5;
+        pointer-events: none;
+    }
+}
+
+.ToogleSvg {
+    width: 20rem;
+    color: #fff;
+    text-transform: uppercase;
+    font-weight: 600;
+    font-size: 1.5rem;
+    position: relative;
+
+    >* {
+        width: auto;    
+    }
+
+    span {
+        position: absolute;
+        left: 50%;
+        top: 23%;
+        transform: translate(-50%);
+    }
+
+    svg:nth-of-type(1) {
+        display: flex;
+    }
+    svg:nth-of-type(2) {
+        display: none;
+    }
+
+    &:active {
+        span {
+            top: 35%;
+        }
+        svg:nth-of-type(1) {
+            display: none;
+        }
+        svg:nth-of-type(2) {
+            display: flex;
+        }
+    }
+}
+
+.Reflect {
+    transform: scaleX(-1);
+}
+
