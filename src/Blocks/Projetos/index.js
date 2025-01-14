@@ -6,6 +6,9 @@ import Base from "./Projetos/base";
 import Example from "./Projetos/example";
 import Project1 from "./Projetos/Project1";
 
+import Thumb from "../../Assets/Thumbs/ThumbSize.png";
+import RivecatThumb from "../../Assets/Thumbs/RiveCat-Thumb.png";
+
 const Projetos = forwardRef((props, ref) => {
 
     const [showMore, setShowMore] = useState(false);
@@ -50,28 +53,28 @@ const Projetos = forwardRef((props, ref) => {
                     <div className={`Line ${showMore ? "showMore" : ""}`}>
 
                         <div className="Group G11">
-                            <Item className="Item" titulo={"Rive"} handleClick={(event) => handleClick(event, 1)} />
-                            <Item className="Item" handleClick={handleClick} titulo={"Titulo"} />
-                            <Item className="Item" handleClick={handleClick} titulo={"Titulo"} />
+                            <Item className="Item" titulo={"Rive Cat"} handleClick={(event) => handleClick(event, 1)} imagem={RivecatThumb} />
+                            <Item className="Item" handleClick={handleClick} titulo={"Titulo"} imagem={Thumb} />
+                            <Item className="Item" handleClick={handleClick} titulo={"Titulo"} imagem={Thumb} />
                         </div>
                         <div className="Group G12">
-                            <Item className="Item" handleClick={handleClick} titulo={"Titulo"} />
-                            <Item className="Item" handleClick={handleClick} titulo={"Titulo"} />
-                            <Item className="Item" handleClick={handleClick} titulo={"Titulo"} />
+                            <Item className="Item" handleClick={handleClick} titulo={"Titulo"} imagem={Thumb} />
+                            <Item className="Item" handleClick={handleClick} titulo={"Titulo"} imagem={Thumb} />
+                            <Item className="Item" handleClick={handleClick} titulo={"Titulo"} imagem={Thumb} />
                         </div>
 
                     </div>
                     <div className={`Line ${showMore ? "showMore" : ""}`}>
                         
                         <div className="Group G21">
-                            <Item className="Item" handleClick={handleClick} titulo={"Titulo"} />
-                            <Item className="Item" handleClick={handleClick} titulo={"Titulo"} />
-                            <Item className="Item" handleClick={handleClick} titulo={"Titulo"} />
+                            <Item className="Item" handleClick={handleClick} titulo={"Titulo"} imagem={Thumb} />
+                            <Item className="Item" handleClick={handleClick} titulo={"Titulo"} imagem={Thumb} />
+                            <Item className="Item" handleClick={handleClick} titulo={"Titulo"} imagem={Thumb} />
                         </div>
                         <div className="Group G22">
-                            <Item className="Item" handleClick={handleClick} titulo={"Titulo"} />
-                            <Item className="Item" handleClick={handleClick} titulo={"Titulo"} />
-                            <Item className="Item" handleClick={handleClick} titulo={"Titulo"} />
+                            <Item className="Item" handleClick={handleClick} titulo={"Titulo"} imagem={Thumb} />
+                            <Item className="Item" handleClick={handleClick} titulo={"Titulo"} imagem={Thumb} />
+                            <Item className="Item" handleClick={handleClick} titulo={"Titulo"} imagem={Thumb} />
                         </div>
 
                     </div>

@@ -1,8 +1,10 @@
 import React from "react";
 
-const Item = ({ className, handleClick, titulo }) => {
+const Item = ({ className, handleClick, titulo, imagem }) => {
   return (
     <div className={className}>
+      <img src={imagem} alt={`Projeto: ${titulo}.`}/>
+
       <button onClick={handleClick}>
         <div>
           <h5> {titulo} </h5>

@@ -12,7 +12,7 @@ import { ReactComponent as Sass } from '../../Assets/Sass.svg';
 import { ReactComponent as Git } from '../../Assets/Git.svg';
 import { ReactComponent as Wordpress } from '../../Assets/Wordpress.svg';
 import { ReactComponent as Postman } from '../../Assets/Postman.svg';
-import { ReactComponent as Blender } from '../../Assets/Blender.svg';
+import { ReactComponent as Rive } from '../../Assets/Rive.svg';
 
 const Habilidades = forwardRef((props, ref) => {
     useEffect(() => {
@@ -70,7 +70,7 @@ const Habilidades = forwardRef((props, ref) => {
                                 <Postman/>  
                             </div>
                             <div>                                  
-                                <Blender/>
+                                <Rive/>
                             </div>
                         </div>
 
@@ -79,7 +79,7 @@ const Habilidades = forwardRef((props, ref) => {
                             <p> Git </p>
                             <p> Wordpress </p>
                             <p> Postman </p>
-                            <p> Blender </p>
+                            <p> Rive App </p>
                         </div>
                     </div>
                 </div>

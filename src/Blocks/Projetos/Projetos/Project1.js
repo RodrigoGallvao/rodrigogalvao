@@ -9,7 +9,7 @@ const Example = ({ children, className, handleClose }) => {
     <div className={className}>
         <div className="Vertical-Content">
             <div className="Line">
-                <h1> Rive </h1>
+                <h1> Rive Cat </h1>
                 
                 <button className="Close-Button" onClick={handleClose}>
                     <Close/>

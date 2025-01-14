@@ -38,7 +38,7 @@ const Contato = forwardRef(({ homeRef }, ref) => {
                             </div>
                             
                             <div className="item"> 
-                                <a title='Entre em contato por e-mail' href="mailto:rodrigogallvao@gmail.com" target="_blank" rel="noreferrer">
+                                <a title='Entre em contato por e-mail' href="mailto:rodrigogallvao@gmail.com">
                                     <img src={Mail} alt="Email de contato: rodrigogallvao@gmail.com."/> 
                                 </a>
                                 <span>
@@ -48,9 +48,9 @@ const Contato = forwardRef(({ homeRef }, ref) => {
                             </div>
                             
                             <div className="item">
-                                <div>
+                                <a>
                                     <img src={MapMark} alt="Região: Minas Gerais, Brasil."/> 
-                                </div> 
+                                </a> 
                                 <span>
                                     Localização 
                                     <p> Minas Gerais, Brasil </p>
