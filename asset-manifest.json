@@ -1,11 +1,12 @@
 {
   "files": {
-    "main.css": "/static/css/main.a885a465.css",
-    "main.js": "/static/js/main.8c4c0efa.js",
+    "main.css": "/static/css/main.b803e870.css",
+    "main.js": "/static/js/main.d3add9e9.js",
     "static/js/453.72d11169.chunk.js": "/static/js/453.72d11169.chunk.js",
     "static/media/Morfeu.riv": "/static/media/Morfeu.7e4cbb7d273876fa7ca2.riv",
-    "static/media/RiveCat-Thumb.png": "/static/media/RiveCat-Thumb.8c404b0a4029bcec7d22.png",
+    "static/media/RiveCat-Thumb.png": "/static/media/RiveCat-Thumb.c2b7ddbc1dbfcfa8d113.png",
     "static/media/LogoBlueprint.png": "/static/media/LogoBlueprint.ebf7936d27d493ddc592.png",
+    "static/media/ThumbSize.png": "/static/media/ThumbSize.bc7e850035c84b22dde0.png",
     "static/media/Phone.png": "/static/media/Phone.8786c4342b7c593737b5.png",
     "static/media/MapMark.png": "/static/media/MapMark.83cae6911893fd214b10.png",
     "static/media/Mail.png": "/static/media/Mail.99bcb6a0d3b0b4d3deeb.png",
@@ -28,12 +29,12 @@
     "static/media/Git.svg": "/static/media/Git.e08a872dd0a7db9af7ca4a65ef10df01.svg",
     "static/media/Css.svg": "/static/media/Css.727f1b0b3f22625483b8afc9189afebf.svg",
     "static/media/Adobe.svg": "/static/media/Adobe.813b662b8de7fcb67596cf88116ce28d.svg",
-    "main.a885a465.css.map": "/static/css/main.a885a465.css.map",
-    "main.8c4c0efa.js.map": "/static/js/main.8c4c0efa.js.map",
+    "main.b803e870.css.map": "/static/css/main.b803e870.css.map",
+    "main.d3add9e9.js.map": "/static/js/main.d3add9e9.js.map",
     "453.72d11169.chunk.js.map": "/static/js/453.72d11169.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.a885a465.css",
-    "static/js/main.8c4c0efa.js"
+    "static/css/main.b803e870.css",
+    "static/js/main.d3add9e9.js"
   ]
 }
