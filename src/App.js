@@ -6,6 +6,7 @@ import {
   SobreMim,
   Habilidades,
   Projetos,
+  Servicos,
   Contato,
 } from './Blocks';
 
@@ -16,6 +17,7 @@ function App() {
   const sobreMimRef = useRef(null);
   const habilidadesRef = useRef(null);
   const projetosRef = useRef(null);
+  const servicosRef = useRef(null);
   const contatoRef = useRef(null);
   const mainWrapperRef = useRef(null);
 
@@ -73,6 +75,7 @@ function App() {
       <SobreMim ref={sobreMimRef}/>
       <Habilidades ref={habilidadesRef}/>
       <Projetos ref={projetosRef}/>
+      <Servicos ref={servicosRef}/>
       <Contato ref={contatoRef} homeRef={homeRef}/>
     </div>
   );
