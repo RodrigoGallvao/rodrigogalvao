@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 25.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" id="Icon3" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 1000 1000" style="enable-background:new 0 0 1000 1000;" xml:space="preserve">
+<style type="text/css">
+	.st07{fill:none;stroke:#FFFFFF;stroke-width:36.9343;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;}
+	.st17{fill:none;stroke:#E5E5E5;stroke-width:55.4014;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;}
+	.st27{fill:none;stroke:#FFFFFF;stroke-width:55.4014;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;}
+	.st37{fill:none;stroke:#FFFFFF;stroke-width:68.2662;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;}
+	.st47{fill:none;stroke:#FFFFFF;stroke-width:50;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;}
+	.st57{fill:none;stroke:#FFFFFF;stroke-width:58.9781;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;}
+</style>
+<g id="Anim">
+	<polyline class="st07" points="532.9,958.3 532.9,696.9 568,669.5 568,608.4 499.8,608.4 499.8,669.5 532.9,696.9 	"/>
+	<line class="st17" x1="396.5" y1="761.5" x2="823.8" y2="761.5"/>
+	<line class="st27" x1="396.5" y1="761.5" x2="709.9" y2="761.5"/>
+	<line class="st17" x1="396.5" y1="888" x2="823.8" y2="888"/>
+	<line class="st27" x1="396.5" y1="888" x2="619" y2="888"/>
+	<line class="st27" x1="165.6" y1="888" x2="267.7" y2="888"/>
+	<line class="st27" x1="165.6" y1="764.4" x2="267.7" y2="764.4"/>
+	<path class="st37" d="M413.3,53.7"/>
+	<path class="st37" d="M263.1,53.7"/>
+	<path class="st47" d="M766.7,511.3H156c-24.9,0-45.2-20.2-45.2-45.2V98.9c0-24.9,20.2-45.2,45.2-45.2h107"/>
+	<path class="st47" d="M252.2,53.7H844c24.9,0,45.2,20.2,45.2,45.2v367.3c0,24.9-20.2,45.2-45.2,45.2h-85.4"/>
+	<path class="st37" d="M215.4,207.9c151.6,6.3,190.5,96.1,224.2,189.7c27.1-69.5,77.2-106.6,147.1-115.7"/>
+	<circle class="st57" cx="707.5" cy="267.8" r="41.6"/>
+</g>
+</svg>

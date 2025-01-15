@@ -1,3 +1,28 @@
+@keyframes dash {
+    0% {
+        stroke-dashoffset: 0;
+        opacity: 0.8;
+    }
+    5% {
+        opacity: 0;
+    }
+    20% {
+        stroke-dashoffset: 0;
+        opacity: 0;
+    }
+    23% {
+        stroke-dashoffset: 1720;
+        opacity: 0;
+    }
+    24% {
+        opacity: 1;
+    }
+    100% {
+        stroke-dashoffset: 0;
+        opacity: 1;
+    }
+}
+
 .Servicos {
     margin: 0 auto;
     width: 100vw;
@@ -24,15 +49,46 @@
         padding: 2rem;
         border: 2px solid rgb(74, 74, 74);
         opacity: 0.7;
+        z-index: 0;
         cursor: pointer;
 
-        transition: border-color 0.5s ease-in-out, opacity 0.5s ease-in-out, background-color 1s ease;
+        transition: border-color 0.5s ease-in-out, opacity 0.5s ease-in-out, background-color 1s ease, transform 0.5s ease-in-out;
 
         &:hover {
             background-color: #171717;
             opacity: 1;
             border-color: #cdcdcd;
             border-width: 2px;
+
+            &.First, &.Middle, &.Last {
+                z-index: 1;
+                transform: rotate(0deg) translateY(0) scale(1.12);
+            }
+
+            svg {
+                opacity: 1;
+                transform: scale(0.8);
+                transition: transform 0.3s ease, opacity 0.5s ease 0.9s;
+
+                * {
+                    animation: dash 2.5s ease-in-out forwards;
+                }
+            }
+        }
+
+        svg {
+            pointer-events: none;
+            opacity: 0.3;
+            height: 50%;
+            width: auto;
+            margin: 0 auto auto;
+            transform: scale(0.7);
+            transition: transform 0.3s ease, opacity 0.5s ease;
+
+            * {
+                stroke-dasharray: 1720;
+                stroke-dashoffset: 0;
+            }
         }
 
         h6 {
@@ -49,6 +105,16 @@
             line-height: 2rem;
             height: 25%;
             pointer-events: none;
+        }
+
+        &.First {
+            transform: rotate(-6deg);
+        }
+        &.Middle {
+            transform: translateY(-6%);
+        }
+        &.Last {
+            transform: rotate(6deg);
         }
     }
 }
