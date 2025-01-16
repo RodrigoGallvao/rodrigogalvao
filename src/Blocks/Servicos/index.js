@@ -12,17 +12,17 @@ const Servicos = forwardRef((props, ref) => {
             <div className='Area First'>
                 <DesignIcon/>
                 <h6> Layout e Design </h6>
-                <p> Design de interface de forma clara, objetiva e principalmente intuitiva. </p>
+                <p> Design de interfaces claras, intuitivas e responsivas para todo os dispositivos. </p>
             </div>
             <div className='Area Middle'>
                 <CodeIcon/>
                 <h6> Desenvolvimento </h6>
-                <p> Desenvolvo sites profissionais, blogs, portfólios, landing pages e e-commerce. </p>                
+                <p> Desenvolvimento de sites profissionais, blogs, portfólios, landing pages e e-commerce. </p>                
             </div>
             <div className='Area Last'>
                 <AnimIcon/>
                 <h6> Animações e Motion </h6>
-                <p> Crio interações que transmitem sensação de modernidade, além de chamarem a atenção do usuário. </p>    
+                <p> Animações que trazem conforto e leveza para tornar a navegação menos cansativa e repetitiva. </p>    
             </div>
         </div>
     );

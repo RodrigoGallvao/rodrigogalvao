@@ -4,6 +4,7 @@ import Habilidades from "./Habilidades";
 import Projetos from "./Projetos";
 import Servicos from "./Servicos";
 import Contato from "./Contato";
+import Fullscreen from "./Fullscreen";
 
 export {
     Home,
@@ -12,4 +13,5 @@ export {
     Projetos,
     Servicos,
     Contato,
+    Fullscreen,
 };

@@ -8,6 +8,7 @@ import {
   Projetos,
   Servicos,
   Contato,
+  Fullscreen,
 } from './Blocks';
 
 import Logo from "./Assets/Logo.png";
