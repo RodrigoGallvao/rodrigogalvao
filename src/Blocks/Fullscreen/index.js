@@ -19,6 +19,21 @@ import Outros2 from "../../Assets/Outros/Outros2.png";
 import Outros8 from "../../Assets/Outros/Outros8.png";
 const imagens = [Outros1, Outros3, Outros11, Outros5, Outros10, Outros7, Outros9, Outros6, Outros12, Outros4, Outros2, Outros8];
 
+const desc = [
+    "Criação de posts de datas comemorativas para rede sociais.",
+    "Criação de mockups personalizados seguindo a identidade visual da marca.",
+    "Criação de posts informativos ou institucionais.",
+    "Criação de layout para embalagens.",
+    "Criação de mídia para rede sociais.",
+    "Criação de layout para uniformes e vestimenta.",
+    "Design de cartões de visita e material publicitário.",
+    "Design de materiais para impressão.",
+    "Criação de layouts responsivos para a resolução de cada aparelho.",
+    "Design de logomarca, monogramas, simbolos e ícones.",
+    "Mockups para visualização de produto.",
+    "Design de produtos para merchandising.",
+]
+
 const Fullscreen = ({ show, click, img }) => {
 
     const [imgToShow, setimgToShow] = useState(img);
@@ -43,7 +58,7 @@ const Fullscreen = ({ show, click, img }) => {
             </div>
             <div className="Panel">
                 <img src={imagens[imgToShow]} alt="Imagem em foco."/>
-                <span> aaaaaaaaaaaaaa </span>
+                <span> {desc[imgToShow]} </span>
             </div>
             <div className="controlWrap">
                 <button onClick={click} className="PrevNext Exit"> <Close/> </button>

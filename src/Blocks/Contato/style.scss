@@ -9,6 +9,10 @@
     position: relative;
 
     padding-top: 12vh;
+    
+    @media (max-width: 767px) {
+        height: 70vh;
+    }
 }
 
 .contato-diagonal-box {
@@ -52,6 +56,10 @@
     display: flex;
     align-items: center;
     justify-content: center;
+
+    @media (max-width: 767px) {
+        width: 100%;
+    }
 
     h1.title {
         margin-top: 3rem;
@@ -173,6 +181,21 @@
     justify-content: center;
     overflow-y: auto;
 
+    @media (max-width: 767px) {
+        position: absolute;
+        height: fit-content;
+        top: 67%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 85%;
+        height: 40%;
+        padding-top: 2rem;
+        border-radius: 1rem;
+
+        align-items: flex-start;
+        justify-content: flex-start;
+    }
+
     >div {
         display: flex;
         flex-flow: column;
@@ -181,6 +204,11 @@
         padding: 0 5rem;
         align-items: flex-end;
         position: relative;
+        
+        @media (max-width: 767px) {
+            height:  fit-content;
+            padding: 0 2rem;
+        }
 
         h1.title {
             font-size: 4rem;
@@ -196,6 +224,10 @@
             justify-content: space-between;
             overflow-y: auto;
             padding-bottom: 2rem;
+
+            @media (max-width: 767px) {
+                align-items: flex-start;
+            }
 
             >* {
                 display: flex;

@@ -64,6 +64,12 @@ h1,h2,h3,h4,h5,p {
   * {
     scrollbar-width: 5px;
     scrollbar-color: #282828;
+
+    @media (max-width: 767px) {
+      ::-webkit-scrollbar {
+        display: none;
+      }
+    }
   }
 
   /* Chrome, Edge, and Safari */
@@ -123,6 +129,10 @@ h1,h2,h3,h4,h5,p {
 
     opacity: 0;
     animation: ShowUp 1s ease 3s forwards;
+
+    @media (max-width: 767px) {
+      display: none;
+    } 
 
     &.darker {
       background-color: #1d1d1d;

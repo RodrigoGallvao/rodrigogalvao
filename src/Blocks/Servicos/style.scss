@@ -34,6 +34,10 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    
+    @media (max-width: 767px) {
+        height: 40vh;
+    }
 
     .Area {
         flex-shrink: 0;
@@ -108,13 +112,13 @@
         }
 
         &.First {
-            transform: rotate(-6deg);
+            transform: rotate(-3deg);
         }
         &.Middle {
-            transform: translateY(-6%);
+            transform: translateY(-3%);
         }
         &.Last {
-            transform: rotate(6deg);
+            transform: rotate(3deg);
         }
     }
 }

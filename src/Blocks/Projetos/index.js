@@ -54,27 +54,27 @@ const Projetos = forwardRef((props, ref) => {
 
                         <div className="Group G11">
                             <Item className="Item" titulo={"Rive Cat"} handleClick={(event) => handleClick(event, 1)} imagem={RivecatThumb} />
-                            <Item className="Item" handleClick={handleClick} titulo={"Em Breve..."} imagem={Thumb} />
-                            <Item className="Item" handleClick={handleClick} titulo={"Em Breve..."} imagem={Thumb} />
+                            <Item className="Item" titulo={"Em Breve..."} imagem={Thumb} />
+                            <Item className="Item" titulo={"Em Breve..."} imagem={Thumb} />
                         </div>
                         <div className="Group G12">
-                            <Item className="Item" handleClick={handleClick} titulo={"Em Breve..."} imagem={Thumb} />
-                            <Item className="Item" handleClick={handleClick} titulo={"Em Breve..."} imagem={Thumb} />
-                            <Item className="Item" handleClick={handleClick} titulo={"Em Breve..."} imagem={Thumb} />
+                            <Item className="Item" titulo={"Em Breve..."} imagem={Thumb} />
+                            <Item className="Item" titulo={"Em Breve..."} imagem={Thumb} />
+                            <Item className="Item" titulo={"Em Breve..."} imagem={Thumb} />
                         </div>
 
                     </div>
                     <div className={`Line ${showMore ? "showMore" : ""}`}>
                         
                         <div className="Group G21">
-                            <Item className="Item" handleClick={handleClick} titulo={"Em Breve..."} imagem={Thumb} />
-                            <Item className="Item" handleClick={handleClick} titulo={"Em Breve..."} imagem={Thumb} />
-                            <Item className="Item" handleClick={handleClick} titulo={"Em Breve..."} imagem={Thumb} />
+                            <Item className="Item" titulo={"Em Breve..."} imagem={Thumb} />
+                            <Item className="Item" titulo={"Em Breve..."} imagem={Thumb} />
+                            <Item className="Item" titulo={"Em Breve..."} imagem={Thumb} />
                         </div>
                         <div className="Group G22">
-                            <Item className="Item" handleClick={handleClick} titulo={"Em Breve..."} imagem={Thumb} />
-                            <Item className="Item" handleClick={handleClick} titulo={"Em Breve..."} imagem={Thumb} />
-                            <Item className="Item" handleClick={handleClick} titulo={"Em Breve..."} imagem={Thumb} />
+                            <Item className="Item" titulo={"Em Breve..."} imagem={Thumb} />
+                            <Item className="Item" titulo={"Em Breve..."} imagem={Thumb} />
+                            <Item className="Item" titulo={"Em Breve..."} imagem={Thumb} />
                         </div>
 
                     </div>

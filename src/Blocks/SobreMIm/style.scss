@@ -22,6 +22,10 @@
 
     overflow: visible;
 
+    @media (max-width: 767px) {
+        height: 60vh;
+    }
+
     >img {
         z-index: 0;
         height: 92%;
@@ -33,6 +37,13 @@
     
         opacity: 0;
         right: 25%;
+
+        @media (max-width: 767px) {
+            height: auto;
+            width: 100vw;
+            transform: translateX(30%);
+            top: 15rem;
+        }
         
         &.in-view {
             animation: Appear-Img 3s ease 1s forwards;
